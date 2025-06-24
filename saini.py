@@ -20,6 +20,7 @@ from pathlib import Path
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
 from base64 import b64decode
+from main import user_thumb, user_thumb_text, user_watermark, user_watermark_text
 
 def duration(filename):
     result = subprocess.run(["ffprobe", "-v", "error", "-show_entries",

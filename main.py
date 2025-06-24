@@ -203,7 +203,7 @@ def main():
     updater.idle()
 
 if __name__ == '__main__':
-    main()
+main()
 
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
 

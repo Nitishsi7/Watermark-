@@ -189,7 +189,7 @@ def error(update: Update, context):
 
 def main():
     # Initialize Telegram bot
-    updater = Updater("YOUR_TELEGRAM_BOT_TOKEN", use_context=True)
+    updater = Updater("7554469173:AAG6B4nW_FQGEuPnO7jqKA-RBRJ6xH-YBNg", use_context=True)
     dp = updater.dispatcher
 
     # Add handlers

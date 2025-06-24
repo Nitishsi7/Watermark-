@@ -1,4 +1,4 @@
-python-telegram-bot>=20.0  # Latest version
+python-telegram-bot==13.7
 Pillow==9.5.0
 ffmpeg-python==0.2.0
 PyPDF2==3.0.1

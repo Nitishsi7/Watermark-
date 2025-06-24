@@ -67,7 +67,7 @@ CHANNELS_LIST = [int(channel_id) for channel_id in CHANNELS if channel_id.isdigi
 
 # main.py
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, MessageHandler, Filters
+from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, MessageHandler, filters
 import os
 from watermark_utils import WatermarkProcessor
 from bot_config import BotConfig

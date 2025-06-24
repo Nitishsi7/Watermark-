@@ -183,26 +183,8 @@ def button_callback(update: Update, context):
         )
     # Add more handlers for specific settings
 
-def error(update: Update, context):
-    """Log errors"""
-    logging.warning(f'Update {update} caused error {context.error}')
-def main():
-    # Initialize Telegram bot
-    updater = Updater("BOT_TOKEN", use_context=True)
-    dp = updater.dispatcher
 
-    # Add handlers
-    dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(MessageHandler(Filters.document, handle_document))
-    dp.add_handler(CallbackQueryHandler(button_callback))
-    dp.add_error_handler(error)
 
-    # Start bot
-    updater.start_polling()
-    updater.idle()
-
-if __name__ == '__main__':
-    main()
   
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
 

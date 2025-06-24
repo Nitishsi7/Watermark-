@@ -13,14 +13,14 @@ import urllib.parse
 import yt_dlp
 import tgcrypto
 import cloudscraper
-   from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-   from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, MessageHandler, Filters
-   import os
-   from watermark_utils import WatermarkProcessor
-   from bot_config import BotConfig
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, MessageHandler, Filters
+import os
+from watermark_utils import WatermarkProcessor
+from bot_config import BotConfig
 
-   watermarker = WatermarkProcessor()
-   config = BotConfig()
+watermarker = WatermarkProcessor()
+config = BotConfig()
   
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad

@@ -186,10 +186,9 @@ def button_callback(update: Update, context):
 def error(update: Update, context):
     """Log errors"""
     logging.warning(f'Update {update} caused error {context.error}')
-
 def main():
     # Initialize Telegram bot
-    updater = Updater("7554469173:AAG6B4nW_FQGEuPnO7jqKA-RBRJ6xH-YBNg", use_context=True)
+    updater = Updater("BOT_TOKEN", use_context=True)
     dp = updater.dispatcher
 
     # Add handlers
@@ -204,7 +203,7 @@ def main():
 
 if __name__ == '__main__':
     main()
-
+  
 cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
 
 api_url = "http://master-api-v3.vercel.app/"
